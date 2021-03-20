@@ -40,7 +40,7 @@ auto cat_to_stdout(std::string const path) -> void{
 }
 
 auto main (int argc, char* argv[]) -> int{
-	for(auto i=0; i < argc; ++i){
+	for(auto i = 1; i < argc; ++i){
 		cat_to_stdout(argv[i]);
 	}
 	
